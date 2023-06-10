@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 import openai
 
 def ChatbotQuery(message):
-    openai.api_key = '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'
+    openai.api_key = 'YOUR_API_KEY'
     messages = [{"role": "system", "content": "You are an intelligent assistant."}]
     chat = None  # Default value for chat
     if message:
